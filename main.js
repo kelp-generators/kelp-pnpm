@@ -135,7 +135,7 @@ const generatorUse = async (prompts, validationRegExes, about, dir, cmd, mergeSc
             console.log(chalk.red('Error: Could not delete package-lock.json, please do so manually and rerun!'))
             process.exit(1)
         } else {
-            console.log(chalk.grey('No package-lock.json folder found, no need to remove.'))
+            console.log(chalk.grey('No package-lock.json found, no need to remove.'))
         }
     }
 
