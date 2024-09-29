@@ -116,7 +116,7 @@ const generatorUse = async (prompts, validationRegExes, about, dir, cmd, mergeSc
     const path = require('path')
     const { exists, existsAsync } = require('enoent') 
     try {
-        fs.rmdirSync(path.join(dir, 'node_modules'), {
+        fs.rm(path.join(dir, 'node_modules'), {
             recursive: true,
         })
     } catch {
